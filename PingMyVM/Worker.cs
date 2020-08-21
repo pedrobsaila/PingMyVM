@@ -20,7 +20,7 @@ namespace PingMyVM
             while (!stoppingToken.IsCancellationRequested)
             {
                 _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
-                await Task.Delay(60000, stoppingToken);
+                await Task.Delay(10000, stoppingToken);
             }
         }
 
